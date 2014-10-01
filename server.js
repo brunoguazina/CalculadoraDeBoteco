@@ -9,6 +9,8 @@ var request = function(req, res){
 }
 
 var server = http.createServer(request);
-server.listen(2000);
+var port = process.env.PORT || 3000
+
+server.listen(port);
 console.log('Rodando...')
 
