@@ -2,7 +2,7 @@ var http = require('http');
 var fs = require('fs');
 
 var request = function(req, res){
-	fs.readFile('calculadora.html', function(erro, data){
+	fs.readFile('index.html', function(erro, data){
 		res.writeHead(200);
 		res.end(data);
 	});

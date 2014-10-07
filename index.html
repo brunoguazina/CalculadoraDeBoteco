@@ -1,0 +1,73 @@
+  <!doctype html>
+  <html lang="">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Calculadora de Boteco</title>
+
+
+    </head>
+    <body>
+      
+
+
+      <main>
+        <h1>Calculadora de Boteco</h1>
+
+  <ul>
+    <li>
+      <input type="number" id="valorDaConta" placeholder="R$ 00,00" required>
+    </li>
+
+    <li>
+      <input type="number" id="quantidadeDePessoas" placeholder="Pessoas">
+    </li>
+    
+    <li>
+      <input type="number" id="porcentagem" placeholder="%">
+    </li>
+    
+    <li>
+      <input type="text" id="resultado" placeholder="resultado" disabled>
+    </li>
+
+    <li>
+      <button onClick="calcular()">Calcular</button>
+    </li>
+  </li>
+
+      </main>
+
+     
+     
+    
+<script>
+function obterValorDaConta() {
+  var numeroDesformatado = document.getElementById('valorDaConta').value;
+  var valorDaConta = numeroDesformatado.replace('R$ ', '').replace(',','.');
+  var porcentagem = document.getElementById('porcentagem').value;
+  var resultadoPorcentagem = (valorDaConta * porcentagem) / 100;
+  var valorTotalDaConta = parseFloat(resultadoPorcentagem) + parseFloat(valorDaConta);
+  return valorTotalDaConta;
+}
+
+function quantidadeDePessoas() {
+  var pessoas = document.getElementById('quantidadeDePessoas').value;
+  return parseFloat(pessoas);
+}
+
+function calcular(conta, pessoas) {
+  var resultado = obterValorDaConta(conta) / quantidadeDePessoas(pessoas);
+  exibirResultado(resultado);
+}
+
+function exibirResultado(resultado) {
+  document.getElementById('resultado').value = 'R$ ' + resultado.toFixed(2);
+}
+</script>
+
+
+    </body>
+  </html>
