@@ -1,0 +1,60 @@
+
+@import '_variavel';
+@import '_fonte';
+
+::selection {
+  background: $corSecundaria;
+  color: $corPrincipal;
+}
+::-moz-selection {
+ background: $corSecundaria;
+  color: $corPrincipal;
+}
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	background: $corPrincipal;
+	background-image: url(../../img/background.jpg);
+}
+.conteudo{
+	width: 800px;
+	margin: 0 auto;
+}
+ul{
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+input[type="number"],
+input[type="text"]{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	border: none;
+	width: 450px;
+	height: 45px;
+	margin: 5px 0;
+}
+button{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	padding: 10px 20px;
+	color: #fff;
+	background: $corSecundaria;
+	border: none;
+}
+
+h1{
+	font-weight: 300;
+}
+
+.frase{
+	font-family: 'chalkdusterregular';
+	font-size: 36px;
+}
