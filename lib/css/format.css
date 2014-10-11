@@ -6,6 +6,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'amertype_md_btmedium';
+  src: url("../fonte/american_typewriter_medium.eot");
+  src: url("../fonte/american_typewriter_medium.eot?#iefix") format("embedded-opentype"), url("../fonte/american_typewriter_medium.woff2") format("woff2"), url("../fonte/american_typewriter_medium.woff") format("woff"), url("../fonte/american_typewriter_medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 ::selection {
   background: black;
   color: #f7bb00;
@@ -16,17 +23,29 @@
   color: #f7bb00;
 }
 
+html,
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   margin: 0;
   padding: 0;
+  height: 100%;
   background: #f7bb00;
   background-image: url(../../img/background.jpg);
 }
 
+.master {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+.beta {
+  background: black;
+}
+
 .conteudo {
-  width: 800px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -59,11 +78,44 @@ button {
   border: none;
 }
 
+figure {
+  text-align: center;
+}
+figure .logo {
+  width: 400px;
+}
+
 h1 {
   font-weight: 300;
 }
 
 .frase {
   font-family: 'chalkdusterregular';
-  font-size: 36px;
+  font-size: 38px;
+  width: 500px;
+  margin: 55px auto 0 auto;
+  line-height: 42px;
+  text-align: center;
+}
+.frase:after {
+  font-family: 'amertype_md_btmedium';
+  font-size: 50px;
+  content: '"';
+}
+.frase:before {
+  font-family: 'amertype_md_btmedium';
+  font-size: 50px;
+  content: '"';
+}
+
+footer {
+  position: absolute;
+  padding: 20px 5%;
+  bottom: 0;
+  width: 90%;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f7bb00;
+  background: black;
 }
