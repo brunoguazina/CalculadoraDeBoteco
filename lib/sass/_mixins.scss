@@ -1,0 +1,19 @@
+
+@mixin fonteAmerican($tamanho: 50px){
+	font-family: 'amertype';
+	font-size: $tamanho;
+}
+
+@mixin rotacao($rotacao: -45deg){
+	transform: rotate($rotacao);
+	-ms-transform: rotate($rotacao);
+	-webkit-transform: rotate($rotacao);
+	-o-transform: rotate($rotacao);
+	-moz-transform: rotate($rotacao);
+}
+
+
+@function clarear($cor, $porcentagem: 20%){
+	$cor: lighten($cor, $porcentagem);
+	@return $cor;
+}

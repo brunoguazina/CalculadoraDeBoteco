@@ -42,20 +42,33 @@ body {
 
 .beta {
   background: black;
+  width: 200px;
+  padding: 5px 0;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  left: -50px;
+  top: 33px;
+  box-shadow: 0 0 5px 0px #333333;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
 }
 
 .conteudo {
   width: 80%;
   min-width: 1024px;
   margin: 0 auto;
-  height: 600px;
+  min-height: 600px;
 }
 
 ul {
   padding: 0;
 }
-
-li {
+ul li {
   list-style: none;
 }
 
@@ -95,21 +108,21 @@ h1 {
 
 .frase {
   font-family: 'chalkdusterregular';
-  font-size: 38px;
-  width: 550px;
-  margin: 55px auto 0 auto;
+  font-size: 40px;
+  width: 600px;
+  margin: 65px auto 0 auto;
   line-height: 42px;
   text-align: center;
 }
 .frase:after {
   font-family: 'amertype';
   font-size: 50px;
-  content: ' " ';
+  content: '\201D';
 }
 .frase:before {
   font-family: 'amertype';
   font-size: 50px;
-  content: ' " ';
+  content: ' \201C ';
 }
 
 footer {
@@ -120,6 +133,7 @@ footer {
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 2px;
   color: #fff;
   background: black;
 }
