@@ -7,7 +7,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'amertype_md_btmedium';
+  font-family: 'amertype';
   src: url("../fonte/american_typewriter_medium.eot");
   src: url("../fonte/american_typewriter_medium.eot?#iefix") format("embedded-opentype"), url("../fonte/american_typewriter_medium.woff2") format("woff2"), url("../fonte/american_typewriter_medium.woff") format("woff"), url("../fonte/american_typewriter_medium.ttf") format("truetype");
   font-weight: normal;
@@ -46,7 +46,9 @@ body {
 
 .conteudo {
   width: 80%;
+  min-width: 1024px;
   margin: 0 auto;
+  height: 600px;
 }
 
 ul {
@@ -80,8 +82,10 @@ button {
 
 figure {
   text-align: center;
+  margin: 0;
 }
 figure .logo {
+  margin: 50px 0 0 0;
   width: 400px;
 }
 
@@ -92,30 +96,30 @@ h1 {
 .frase {
   font-family: 'chalkdusterregular';
   font-size: 38px;
-  width: 500px;
+  width: 550px;
   margin: 55px auto 0 auto;
   line-height: 42px;
   text-align: center;
 }
 .frase:after {
-  font-family: 'amertype_md_btmedium';
+  font-family: 'amertype';
   font-size: 50px;
-  content: '"';
+  content: ' " ';
 }
 .frase:before {
-  font-family: 'amertype_md_btmedium';
+  font-family: 'amertype';
   font-size: 50px;
-  content: '"';
+  content: ' " ';
 }
 
 footer {
   position: absolute;
-  padding: 20px 5%;
+  padding: 15px 0;
   bottom: 0;
-  width: 90%;
+  width: 100%;
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
-  color: #f7bb00;
+  color: #fff;
   background: black;
 }
