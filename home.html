@@ -1,24 +1,30 @@
-  <!doctype html>
-  <html lang="">
-    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculadora de Boteco</title>  
+    <link rel="stylesheet" href="lib/css/format.css">
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
 
-      <title>Calculadora de Boteco</title>
+    <script>    
+        if (screen.width > 699) {
+            document.location = "index.html";
+        }
+    </script>
+
+</head>
+<body>
       
-      <link rel="stylesheet" href="lib/css/format.css">
-
-    </head>
-    <body>
-      
-
-
-      <main class="conteudo">
-        <h1>home</h1>
-
-<a href="index.html">voltar</a>
+<div class="master">
+<main class="conteudo">
+    <figure>
+        <img class="logo" src="img/logo-calculadoraDeBoteco.png" alt="">
+    </figure>
 
   <ul>
     <li>
@@ -42,11 +48,17 @@
     </li>
   </ul>
 
-      </main>
+</main>
+    
+    <footer>
+        <div>
+            Se beber, não dirija!
+        </div>
+    </footer>
 
-     
-     
+</div>
+
 <script src="lib/js/script.js"></script>
 
-    </body>
-  </html>
+</body>
+</html>

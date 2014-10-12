@@ -10,6 +10,13 @@
     <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
+
+    <script>    
+        if (screen.width < 699) {
+            document.location = "home.html";
+        }
+    </script>
+
 </head>
 <body>
 
@@ -18,7 +25,12 @@
 <div class="master">
 
     <main class="conteudo">
-    
+        
+        <figure class="qrCode">
+            <img src="img/qrcode-calculadora.jpg" alt="">
+            <figcaption>Acesse do seu smartphone</figcaption>
+        </figure>
+
         <figure>
             <img class="logo" src="img/logo-calculadoraDeBoteco.png" alt="">
         </figure>

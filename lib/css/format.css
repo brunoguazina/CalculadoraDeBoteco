@@ -58,7 +58,21 @@ body {
   -moz-transform: rotate(-45deg);
 }
 
+.qrCode {
+  position: absolute;
+  right: -50px;
+  top: 55%;
+  margin-top: -70px;
+}
+.qrCode img {
+  width: 140px;
+}
+.qrCode figcaption {
+  width: 140px;
+}
+
 .conteudo {
+  position: relative;
   width: 80%;
   min-width: 1024px;
   margin: 0 auto;
@@ -67,30 +81,10 @@ body {
 
 ul {
   padding: 0;
+  margin: 0;
 }
 ul li {
   list-style: none;
-}
-
-input[type="number"],
-input[type="text"] {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  border: none;
-  width: 450px;
-  height: 45px;
-  margin: 5px 0;
-}
-
-button {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  padding: 10px 20px;
-  color: #fff;
-  background: black;
-  border: none;
 }
 
 figure {
@@ -100,10 +94,6 @@ figure {
 figure .logo {
   margin: 50px 0 0 0;
   width: 400px;
-}
-
-h1 {
-  font-weight: 300;
 }
 
 .frase {
@@ -136,4 +126,43 @@ footer {
   letter-spacing: 2px;
   color: #fff;
   background: black;
+}
+
+@media (max-width: 600px) {
+  .conteudo {
+    width: 80%;
+    min-width: 200px;
+    margin: 0 auto;
+  }
+
+  input[type="number"],
+  input[type="text"] {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    border: none;
+    width: 95%;
+    height: 40px;
+    margin: 2px 0;
+  }
+
+  button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 12px 30px;
+    margin: 7px 0 0 60px;
+    color: #fff;
+    background: black;
+    border: none;
+  }
+
+  figure {
+    text-align: center;
+    margin: 0;
+  }
+  figure .logo {
+    margin: 10px 0 0 0;
+    width: 230px;
+  }
 }
