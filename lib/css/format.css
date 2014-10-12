@@ -62,12 +62,14 @@ body {
   position: absolute;
   right: -50px;
   top: 55%;
-  margin-top: -70px;
+  margin-top: -60px;
 }
 .qrCode img {
-  width: 140px;
+  width: 120px;
 }
 .qrCode figcaption {
+  line-height: 14px;
+  font-size: 14px;
   width: 140px;
 }
 
@@ -138,11 +140,11 @@ footer {
   input[type="number"],
   input[type="text"] {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     border: none;
     width: 95%;
-    height: 40px;
+    height: 35px;
     margin: 2px 0;
   }
 
@@ -163,6 +165,6 @@ footer {
   }
   figure .logo {
     margin: 10px 0 0 0;
-    width: 230px;
+    width: 220px;
   }
 }

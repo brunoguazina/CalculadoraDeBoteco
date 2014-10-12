@@ -44,18 +44,22 @@ body{
 	box-shadow: 0 0 5px 0px clarear($corSecundaria, 20%);
 	@include rotacao();
 }
+
 .qrCode{
 	position: absolute;
 	right: -50px;
 	top: 55%;
-	margin-top: -70px;
+	margin-top: -60px;
 	img{
-		width: 140px;
+		width: 120px;
 	}
 	figcaption{
+		line-height: 14px;
+		font-size: 14px;
 		width: 140px;
 	}
 }
+
 .conteudo{
 	position: relative;
 	width: 80%;
@@ -124,11 +128,11 @@ footer{
 	input[type="number"],
 	input[type="text"]{
 		font-family: 'Open Sans', sans-serif;
-		font-size: 20px;
+		font-size: 18px;
 		font-weight: 300;
 		border: none;
 		width: 95%;
-		height: 40px;
+		height: 35px;
 		margin: 2px 0;
 	}
 
@@ -148,7 +152,7 @@ footer{
 		margin: 0;
 		.logo{
 			margin: 10px 0 0 0;
-			width: 230px;
+			width: 220px;
 		}
 	}
 }
