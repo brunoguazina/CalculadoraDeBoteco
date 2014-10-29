@@ -1,0 +1,108 @@
+@media (max-width: 1024px) {
+
+	.qrCode{
+		position: absolute;
+		right: -65px;
+		top: 47%;
+		img{
+			width: 110px;
+		}
+		figcaption{
+			line-height: 14px;
+			font-size: 14px;
+			width: 140px;
+		}
+	}	
+		
+	.conteudo {
+		position: relative;
+		width: 50%;
+		min-width: 600px;
+		margin: 0 auto;
+		min-height: 600px;
+	}
+	
+	figure .logo {
+		margin: 25px 0 0 0;
+		width: 330px;
+	}
+
+	.frase{
+		font-size: 20px;
+		width: 700px;
+	}
+
+}
+
+
+@media (max-width: 768px) {
+
+	.qrCode{
+		position: absolute;
+		right: -50px;
+		margin-top: -100px;
+		img{
+			width: 120px;
+		}
+		figcaption{
+			line-height: 14px;
+			font-size: 14px;
+			width: 140px;
+		}
+	}	
+		
+	.conteudo {
+		position: relative;
+		width: 50%;
+		max-width: 990px;
+		margin: 0 auto;
+		min-height: 600px;
+	}
+
+	.frase{
+		
+		font-size: 30px;
+		width: 450px;
+	}
+}
+
+
+
+@media (max-width: 600px) {
+	.conteudo{
+		width: 80%;
+		min-width: 200px;
+		margin: 0 auto;
+	}
+
+	input[type="number"],
+	input[type="text"]{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		font-weight: 300;
+		border: none;
+		width: 95%;
+		height: 35px;
+		margin: 2px 0;
+	}
+
+	button{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		font-weight: 300;
+		padding: 12px 30px;
+		margin: 7px 0 0 60px;
+		color: #fff;
+		background: $corSecundaria;
+		border: none;
+	}
+
+	figure{
+		text-align: center;
+		margin: 0;
+		.logo{
+			margin: 10px 0 0 0;
+			width: 220px;
+		}
+	}
+}

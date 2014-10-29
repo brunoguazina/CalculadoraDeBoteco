@@ -130,6 +130,67 @@ footer {
   background: black;
 }
 
+@media (max-width: 1024px) {
+  .qrCode {
+    position: absolute;
+    right: -65px;
+    top: 47%;
+  }
+  .qrCode img {
+    width: 110px;
+  }
+  .qrCode figcaption {
+    line-height: 14px;
+    font-size: 14px;
+    width: 140px;
+  }
+
+  .conteudo {
+    position: relative;
+    width: 50%;
+    min-width: 600px;
+    margin: 0 auto;
+    min-height: 600px;
+  }
+
+  figure .logo {
+    margin: 25px 0 0 0;
+    width: 330px;
+  }
+
+  .frase {
+    font-size: 20px;
+    width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .qrCode {
+    position: absolute;
+    right: -50px;
+    margin-top: -100px;
+  }
+  .qrCode img {
+    width: 120px;
+  }
+  .qrCode figcaption {
+    line-height: 14px;
+    font-size: 14px;
+    width: 140px;
+  }
+
+  .conteudo {
+    position: relative;
+    width: 50%;
+    max-width: 990px;
+    margin: 0 auto;
+    min-height: 600px;
+  }
+
+  .frase {
+    font-size: 30px;
+    width: 450px;
+  }
+}
 @media (max-width: 600px) {
   .conteudo {
     width: 80%;
